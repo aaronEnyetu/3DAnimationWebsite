@@ -5,6 +5,8 @@ import DisplaySection from "./components/DisplaySection.jsx";
 import WebgiViewer from "./components/WebgiViewer.jsx";
 import { useRef } from "react";
 
+import Loader  from "./components/Loader";
+
 function App() {
 
   const WebgiViewerRef = useRef()
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Loader/>
       <div ref={contentRef} id= 'content'>
 
       <Nav />
