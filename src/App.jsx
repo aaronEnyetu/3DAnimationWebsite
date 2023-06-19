@@ -1,9 +1,10 @@
+import Nav from "./components/Nav.jsx";
 
 function App() {
 
   return (
     <div className="App">
-      Hello
+      <Nav/>
     </div>
   );
 }
