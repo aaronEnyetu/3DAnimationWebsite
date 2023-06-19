@@ -2,6 +2,7 @@ import Nav from "./components/Nav.jsx";
 import Jumbotron from "./components/Jumbotron.jsx";
 import SoundSection from "./components/SoundSection.jsx";
 import DisplaySection from "./components/DisplaySection.jsx";
+import WebgiViewer from "./components/WebgiViewer.jsx";
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
       <Nav />
       <Jumbotron />
       <SoundSection />
-      <DisplaySection/>
+      <DisplaySection />
+      <WebgiViewer/>
     </div>
   );
 }
