@@ -1,10 +1,12 @@
 import Nav from "./components/Nav.jsx";
+import Jumbotron from "./components/Jumbotron.jsx";
 
 function App() {
 
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
+      <Jumbotron/>
     </div>
   );
 }
