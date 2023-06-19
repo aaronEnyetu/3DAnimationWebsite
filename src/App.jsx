@@ -9,17 +9,22 @@ function App() {
 
   const WebgiViewerRef = useRef()
 
+  const contentRef = useRef()
+
   const handlePreview = () => {
     WebgiViewerRef.current.triggerPreview()
   }
 
   return (
     <div className="App">
+      <div ref={contentRef} id= 'content'>
+
       <Nav />
       <Jumbotron />
       <SoundSection />
       <DisplaySection triggerPreview={handlePreview} />
-      <WebgiViewer ref={WebgiViewerRef} />
+      </div>
+      <WebgiViewer contentRef={contentRef} ref={WebgiViewerRef} />
     </div>
   );
 }
